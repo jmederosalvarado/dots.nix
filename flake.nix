@@ -140,11 +140,11 @@
             })
             (pkgs.runCommand "nvim-core-config" { } ''
               src="$out/dots/.config/nvim/lua/core"
-              mkdir -p $src && ln -sf ${./configs/nvim/lua/core} $src
+              mkdir -p $(dirname $src) && ln -sf ${./configs/nvim/lua/core} $src
             '')
             (pkgs.runCommand "nvim-plugins-config" { } ''
               src="$out/dots/.config/nvim/lua/plugins"
-              mkdir -p $src && ln -sf ${./configs/nvim/lua/plugins} $src
+              mkdir -p $(dirname $src) && ln -sf ${./configs/nvim/lua/plugins} $src
             '')
           ];
           pathsToLink = [ "/bin" "/dots" ];
