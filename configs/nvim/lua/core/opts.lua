@@ -30,6 +30,7 @@ if not vim.g.vscode then
 
     -- global statusline
     vim.o.laststatus = 3
+    vim.cmd('set laststatus=3')
 
 	-- show some invisible characters (e.g. tabs, spaces)
 	vim.o.list = true
