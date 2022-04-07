@@ -86,6 +86,7 @@
                 gcc # for installing treesitter parsers
                 ripgrep # for telescope
                 github-cli # for octo.nvim
+                nodejs # for copilot.vim
               ];
             })
 

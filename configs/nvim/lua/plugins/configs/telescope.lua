@@ -1,7 +1,7 @@
 vim.cmd([[command! H Telescope help_tags]])
 vim.cmd([[command! Help Telescope help_tags]])
 
-vim.keymap.set("n", "<leader>fa", ":Telescope <CR>", { silent = true })
+vim.keymap.set("n", "<leader>f", ":Telescope <CR>", { silent = true })
 vim.keymap.set("n", "<leader>fb", ":Telescope buffers <CR>", { silent = true })
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files no_ignore=true <CR>", { silent = true })
 vim.keymap.set("n", "<leader>fh", ":Telescope find_files hidden=true <CR>", { silent = true })
@@ -33,4 +33,5 @@ telescope.setup({
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension("frecency")
 telescope.load_extension("git_worktree")
