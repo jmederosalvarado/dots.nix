@@ -159,11 +159,11 @@ local specs = function(use)
 
 	-- APPEARANCE {{{
 
-	use({
-		"romgrk/nvim-treesitter-context",
-		config = use_config("treesitter_context"),
-        after = "nvim-treesitter",
-	})
+	-- use({
+	-- 	"romgrk/nvim-treesitter-context",
+	-- 	config = use_config("treesitter_context"),
+	--        after = "nvim-treesitter",
+	-- })
 
 	use({
 		"kyazdani42/nvim-web-devicons",
